@@ -37,6 +37,20 @@
 
 .thumbnail-div {
   margin-bottom: 4px;
+  position: relative;
+}
+
+.video-time {
+  background-color: rgba(06, 06, 06, 0.8);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 3px 3px 3px 3px;
+  font-family: Roboto;
+  position: absolute;
+  bottom: 8px;
+  right: 4px;
+  font-size: 12px;
 }
 
 .video-grid {

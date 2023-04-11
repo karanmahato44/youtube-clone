@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/video.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 
 <body>
@@ -31,15 +32,23 @@
     </div>
     <div class="right">
       <img src="icons/upload.svg" alt="" class="upload-icon">
-      <img src="icons/notifications.svg" alt="" class="notifications-icon">
+      <div class="notifications-icon-container">
+        <img src="icons/notifications.svg" alt="" class="notifications-icon">
+        <div class="notifications-count">4</div>
+      </div>
       <img src="profiles/my-channel.jpg" alt="" class="current-user-picture">
     </div>
+  </div>
+
+  <div class="sidebar">
+    sidebar
   </div>
 
   <div class="video-grid">
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/1js.jpg" alt="js course">
+        <div class="video-time">11:57:22</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -55,13 +64,14 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/2sql.jpg" alt="js course">
+        <div class="video-time">4:20:39</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
           <img class="channel-picture" src="profiles/2fcc.jpg" alt="">
         </div>
         <div class="video-info-div">
-          <p class="video-title">SQL Tutorial - Full Database Course for Beginners </p>
+          <p class="video-title">SQL Tutorial - Full Database Course for Beginners</p>
           <p class="video-uploader">freeCodeCamp.org &#10003;</p>
           <p class="video-stats">14M views &#x2022; 4 years ago</p>
         </div>
@@ -70,6 +80,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/3vscode.jpg" alt="js course">
+        <div class="video-time">11:35</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -85,6 +96,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/4compression.jpg" alt="js course">
+        <div class="video-time">4:20</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -100,6 +112,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/5ted.jpg" alt="js course">
+        <div class="video-time">14:04</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -115,6 +128,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/6java.jpg" alt="js course">
+        <div class="video-time">4:48:34</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -130,6 +144,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/7yukigentoo.jpg" alt="js course">
+        <div class="video-time">2:22</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -145,6 +160,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/8bigo.jpg" alt="js course">
+        <div class="video-time">36:22</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -161,6 +177,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/9calculus.jpg" alt="js course">
+        <div class="video-time">17:05</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -176,13 +193,14 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/10ai.jpg" alt="js course">
+        <div class="video-time">3:17:15</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
           <img class="channel-picture" src="profiles/10evan.jpg" alt="">
         </div>
         <div class="video-info-div">
-          <p class="video-title"> Adobe Illustrator for Beginners | FREE COURSE</p>
+          <p class="video-title">Adobe Illustrator for Beginners | FREE COURSE</p>
           <p class="video-uploader">Envato Tuts+ &#10003;</p>
           <p class="video-stats">8.7M views &#x2022; 2 years ago</p>
         </div>
@@ -191,13 +209,14 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/11stocks.jpg" alt="js course">
+        <div class="video-time">12:05</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
           <img class="channel-picture" src="profiles/11ideanp.jpg" alt="">
         </div>
         <div class="video-info-div">
-          <p class="video-title"> Nepal Share Market - Understanding the Basics | नेपाल Share बजार - जान्नुपर्ने कुराहरु
+          <p class="video-title">Nepal Share Market - Understanding the Basics | नेपाल Share बजार - जान्नुपर्ने कुराहरु
             | Part 1</p>
           <p class="video-uploader">Ideapreneur Nepal &#10003;</p>
           <p class="video-stats">914K views &#x2022; 2 years ago</p>
@@ -207,6 +226,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/12finan.jpg" alt="js course">
+        <div class="video-time">9:39</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -214,7 +234,7 @@
         </div>
         <div class="video-info-div">
           <p class="video-title">ACCOUNTANT EXPLAINS: Money Habits Keeping You Poor</p>
-          <p class="video-uploader">Nischa &#10003;</p>
+          <p class="video-uploader">Nischa</p>
           <p class="video-stats">6.4M views &#x2022; 3 months ago</p>
         </div>
       </div>
@@ -222,6 +242,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/13linuxfs.jpg" alt="js course">
+        <div class="video-time">15:59</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -229,7 +250,7 @@
         </div>
         <div class="video-info-div">
           <p class="video-title">Linux File System/Structure Explained!</p>
-          <p class="video-uploader">DorianDotSlash &#10003;</p>
+          <p class="video-uploader">DorianDotSlash</p>
           <p class="video-stats">3.4M views &#x2022; 4 years ago</p>
         </div>
       </div>
@@ -237,6 +258,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/14django.jpg" alt="js course">
+        <div class="video-time">1:02:36</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -252,6 +274,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/15magnets.jpg" alt="js course">
+        <div class="video-time">7:33</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
@@ -259,7 +282,7 @@
         </div>
         <div class="video-info-div">
           <p class="video-title">Richard Feynman Magnets</p>
-          <p class="video-uploader">nebulajr &#10003;</p>
+          <p class="video-uploader">nebulajr</p>
           <p class="video-stats">857K views &#x2022; 13 years ago</p>
         </div>
       </div>
@@ -267,6 +290,7 @@
     <div class="video-preview">
       <div class="thumbnail-div">
         <img class="thumbnail" src="thumbnails/16c.jpg" alt="js course">
+        <div class="video-time">2:05</div>
       </div>
       <div class="uploader-grid">
         <div class="avatar-div">
