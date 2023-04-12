@@ -1,6 +1,7 @@
 .thumbnail {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .video-title {
@@ -9,13 +10,15 @@
   margin-bottom: 4px;
   line-height: 22px;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.channel-name {
+.video-uploader {
   color: rgb(96, 96, 96);
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .video-stats {
@@ -33,6 +36,7 @@
 .channel-picture {
   border-radius: 50%;
   width: 40px;
+  cursor: pointer;
 }
 
 .thumbnail-div {

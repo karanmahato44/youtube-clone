@@ -4,5 +4,32 @@
   left: 0;
   top: 60px;
   width: 72px;
-  background-color: rgb(196, 191, 191);
+  background-color: rgb(255, 255, 255);
+  /* background-color: pink; */
+  cursor: pointer;
+}
+
+.sidebar-link-divs {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px 2px 4px;
+}
+
+.sidebar-link-divs:hover {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+
+.sidebar-link-divs img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 4px;
+}
+
+.sidebar-text {
+  font-size: 11px;
 }

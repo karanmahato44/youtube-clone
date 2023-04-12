@@ -40,15 +40,32 @@
   align-items: center;
 }
 
-.hamburger-menu {
+.hamburger-menu-btn {
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 24px;
+  width: 44px;
+  height: 44px;
+}
+
+.hamburger-menu-btn:hover {
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.hamburger-menu-icon {
   height: 30px;
   width: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .youtube-logo {
   height: 25px;
+  cursor: pointer;
 }
 
 .center {
@@ -79,24 +96,25 @@
   margin-right: 8px;
 }
 
-.voice-search-button {
-  border: none;
-}
-
 .search-icon {
-  /* background-color: rgb(113, 209, 142); */
   width: 30px;
   height: 30px;
 }
 
 .voice-search-button {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  background-color: white;
+}
+
+.voice-search-button:hover {
   border-radius: 50%;
-  background-color: #D3D3D3;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }
 
 .voice-search-icon {
@@ -118,11 +136,13 @@
 .upload-icon {
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 
 .notifications-icon {
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 
 .notifications-icon-container {
@@ -147,4 +167,5 @@
   width: 45px;
   object-fit: contain;
   border-radius: 50%;
+  cursor: pointer;
 }
