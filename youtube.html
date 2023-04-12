@@ -16,31 +16,44 @@
 </head>
 
 <body>
-  <div class="header">
+  <header class="header">
     <div class="left">
-      <button class="hamburger-menu-btn"><img src="icons/hamburger-menu.svg" alt="" class="hamburger-menu-icon"></button>
-      <img src="icons/youtube-logo.svg" alt="" class="youtube-logo">
+      <button class="hamburger-menu-btn"><img src="icons/hamburger-menu.svg" alt=""
+          class="hamburger-menu-icon"></button>
+      <div class="youtube-logo-div">
+        <img src="icons/youtube-logo.svg" alt="" class="youtube-logo">
+        <div class="tooltip">YouTube Home</div>
+      </div>
     </div>
     <div class="center">
       <input class="search-bar" type="text" placeholder="Search">
       <button class="search-button">
         <img src="icons/search.svg" alt="" class="search-icon">
+        <div class="tooltip">Search</div>
       </button>
       <button class="voice-search-button">
         <img src="icons/voice-search-icon.svg" alt="" class="voice-search-icon">
+        <div class="tooltip">Search with your voice</div>
       </button>
     </div>
     <div class="right">
-      <img src="icons/upload.svg" alt="" class="upload-icon">
+      <button class="upload-icon-button">
+        <img src="icons/upload.svg" alt="" class="upload-icon">
+        <div class="tooltip">Create</div>
+      </button>
+
       <div class="notifications-icon-container">
-        <img src="icons/notifications.svg" alt="" class="notifications-icon">
+        <button class="notifications-icon-button">
+          <img src="icons/notifications.svg" alt="" class="notifications-icon">
+          <div class="tooltip">Notifications</div>
+        </button>
         <div class="notifications-count">4</div>
       </div>
       <img src="profiles/my-channel.jpg" alt="" class="current-user-picture">
     </div>
-  </div>
+  </header>
 
-  <div class="sidebar">
+  <nav class="sidebar">
     <div class="sidebar-link-divs">
       <img src="icons/home.svg" alt="home icon">
       <div class="sidebar-text">Home</div>
@@ -53,269 +66,395 @@
       <img src="icons/library.svg" alt="library icon">
       <div class="sidebar-text">Library</div>
     </div>
-  </div>
+  </nav>
 
-  <div class="video-grid">
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/1js.jpg" alt="js course">
-        <div class="video-time">11:57:22</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/1ssdev.jpg" alt="">
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=SBmSRK3feww"><img class="thumbnail" src="thumbnails/1js.jpg"
+              alt="learn js ssd">
+            <div class="video-time">11:57:22</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">JavaScript Full Course (2023) - Beginner to Pro - Part 1</p>
-          <p class="video-uploader">SuperSimpleDev &#10003;</p>
-          <p class="video-stats">49K views &#x2022; 4 days ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/2sql.jpg" alt="js course">
-        <div class="video-time">4:20:39</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/2fcc.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">SQL Tutorial - Full Database Course for Beginners</p>
-          <p class="video-uploader">freeCodeCamp.org &#10003;</p>
-          <p class="video-stats">14M views &#x2022; 4 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/1ssdev.jpg" alt="super simple dev">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=SBmSRK3feww">
+              <p class="video-title">JavaScript Full Course (2023) - Beginner to Pro - Part 1</p>
+            </a>
+            <p class="video-uploader">SuperSimpleDev &#10003;</p>
+            <p class="video-stats">49K views &#x2022; 4 days ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/3vscode.jpg" alt="js course">
-        <div class="video-time">11:35</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/3fireship.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY"><img class="thumbnail" src="thumbnails/2sql.jpg"
+              alt="learn sql"></a>
+          <div class="video-time">4:20:39</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">VS Code Productivity Tips and Speed Hacks</p>
-          <p class="video-uploader">Fireship &#10003;</p>
-          <p class="video-stats">1.7M views &#x2022; 1 year ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/4compression.jpg" alt="js course">
-        <div class="video-time">4:20</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/4tom.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Why Snow and Confetti Ruin YouTube Video Quality</p>
-          <p class="video-uploader">Tom Scott &#10003;</p>
-          <p class="video-stats">8.8M views &#x2022; 6 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/2fcc.jpg" alt="fcc">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY">
+              <p class="video-title">SQL Tutorial - Full Database Course for Beginners</p>
+            </a>
+            <p class="video-uploader">freeCodeCamp.org &#10003;</p>
+            <p class="video-stats">14M views &#x2022; 4 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/5ted.jpg" alt="js course">
-        <div class="video-time">14:04</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/5ted.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=ifTF3ags0XI"><img class="thumbnail" src="thumbnails/3vscode.jpg"
+              alt="vscode tips"></a>
+          <div class="video-time">11:35</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">Tim Urban: Inside the mind of a master procrastinator | TED</p>
-          <p class="video-uploader">TED &#10003;</p>
-          <p class="video-stats">52M views &#x2022; 7 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/6java.jpg" alt="js course">
-        <div class="video-time">4:48:34</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/6bro.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Java GUI: Full Course ☕ (FREE)</p>
-          <p class="video-uploader">Bro Code &#10003;</p>
-          <p class="video-stats">1.3M views &#x2022; 2 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/3fireship.jpg" alt="fireship">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=ifTF3ags0XI">
+              <p class="video-title">VS Code Productivity Tips and Speed Hacks</p>
+            </a>
+            <p class="video-uploader">Fireship &#10003;</p>
+            <p class="video-stats">1.7M views &#x2022; 1 year ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/7yukigentoo.jpg" alt="js course">
-        <div class="video-time">2:22</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/7mout.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=r6Rp-uo6HmI"><img class="thumbnail" src="thumbnails/4compression.jpg"
+              alt="vid compression"></a>
+          <div class="video-time">4:20</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">Yuki Installs Gentoo</p>
-          <p class="video-uploader">Mental Outlaw &#10003;</p>
-          <p class="video-stats">449K views &#x2022; 2 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/8bigo.jpg" alt="js course">
-        <div class="video-time">36:22</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/8csdojo.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Introduction to Big O Notation and Time Complexity (Data Structures & Algorithms #7)
-          </p>
-          <p class="video-uploader">CS Dojo &#10003;</p>
-          <p class="video-stats">1.7M views &#x2022; 4 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/4tom.jpg" alt="tom scott">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=r6Rp-uo6HmI">
+              <p class="video-title">Why Snow and Confetti Ruin YouTube Video Quality</p>
+            </a>
+            <p class="video-uploader">Tom Scott &#10003;</p>
+            <p class="video-stats">8.8M views &#x2022; 6 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/9calculus.jpg" alt="js course">
-        <div class="video-time">17:05</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/9threeb1b.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=arj7oStGLkU"><img class="thumbnail" src="thumbnails/5ted.jpg"
+              alt="procrastinator"></a>
+          <div class="video-time">14:04</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">The essence of calculus</p>
-          <p class="video-uploader">3Blue1Brown &#10003;</p>
-          <p class="video-stats">7.4M views &#x2022; 5 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/10ai.jpg" alt="js course">
-        <div class="video-time">3:17:15</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/10evan.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Adobe Illustrator for Beginners | FREE COURSE</p>
-          <p class="video-uploader">Envato Tuts+ &#10003;</p>
-          <p class="video-stats">8.7M views &#x2022; 2 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/5ted.jpg" alt="ted">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=arj7oStGLkU">
+              <p class="video-title">Tim Urban: Inside the mind of a master procrastinator | TED</p>
+            </a>
+            <p class="video-uploader">TED &#10003;</p>
+            <p class="video-stats">52M views &#x2022; 7 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/11stocks.jpg" alt="js course">
-        <div class="video-time">12:05</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/11ideanp.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=Kmgo00avvEw"><img class="thumbnail" src="thumbnails/6java.jpg"
+              alt="java gui brocode"></a>
+          <div class="video-time">4:48:34</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">Nepal Share Market - Understanding the Basics | नेपाल Share बजार - जान्नुपर्ने कुराहरु
-            | Part 1</p>
-          <p class="video-uploader">Ideapreneur Nepal &#10003;</p>
-          <p class="video-stats">914K views &#x2022; 2 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/12finan.jpg" alt="js course">
-        <div class="video-time">9:39</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/12nischa.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">ACCOUNTANT EXPLAINS: Money Habits Keeping You Poor</p>
-          <p class="video-uploader">Nischa</p>
-          <p class="video-stats">6.4M views &#x2022; 3 months ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/6bro.jpg" alt="brocode">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=Kmgo00avvEw">
+              <p class="video-title">Java GUI: Full Course ☕ (FREE)</p>
+            </a>
+            <p class="video-uploader">Bro Code &#10003;</p>
+            <p class="video-stats">1.3M views &#x2022; 2 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/13linuxfs.jpg" alt="js course">
-        <div class="video-time">15:59</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/13dorian.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=S8s9uzPIqQ4"><img class="thumbnail" src="thumbnails/7yukigentoo.jpg"
+              alt="yuki gentoo"></a>
+          <div class="video-time">2:22</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">Linux File System/Structure Explained!</p>
-          <p class="video-uploader">DorianDotSlash</p>
-          <p class="video-stats">3.4M views &#x2022; 4 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/14django.jpg" alt="js course">
-        <div class="video-time">1:02:36</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/14mosh.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Python Django Tutorial for Beginners</p>
-          <p class="video-uploader">Programming with Mosh &#10003;</p>
-          <p class="video-stats">1.5M views &#x2022; 1 year ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/7mout.jpg" alt="mental outlaw">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=S8s9uzPIqQ4">
+              <p class="video-title">Yuki Installs Gentoo</p>
+            </a>
+            <p class="video-uploader">Mental Outlaw &#10003;</p>
+            <p class="video-stats">449K views &#x2022; 2 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/15magnets.jpg" alt="js course">
-        <div class="video-time">7:33</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/15fman.jpg" alt="">
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=D6xkbGLQesk"><img class="thumbnail" src="thumbnails/8bigo.jpg"
+              alt="big o"></a>
+          <div class="video-time">36:22</div>
         </div>
-        <div class="video-info-div">
-          <p class="video-title">Richard Feynman Magnets</p>
-          <p class="video-uploader">nebulajr</p>
-          <p class="video-stats">857K views &#x2022; 13 years ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="thumbnails/16c.jpg" alt="js course">
-        <div class="video-time">2:05</div>
-      </div>
-      <div class="uploader-grid">
-        <div class="avatar-div">
-          <img class="channel-picture" src="profiles/16lex.jpg" alt="">
-        </div>
-        <div class="video-info-div">
-          <p class="video-title">Donut-shaped C code that generates a 3D spinning donut</p>
-          <p class="video-uploader">Lex Fridman &#10003;</p>
-          <p class="video-stats">7.9M views &#x2022; 2 years ago</p>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/8csdojo.jpg" alt="CS Dojo">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=D6xkbGLQesk">
+              <p class="video-title">Introduction to Big O Notation and Time Complexity (Data Structures & Algorithms
+                #7)
+              </p>
+            </a>
+            <p class="video-uploader">CS Dojo &#10003;</p>
+            <p class="video-stats">1.7M views &#x2022; 4 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-
-  </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=WUvTyaaNkzM"><img class="thumbnail" src="thumbnails/9calculus.jpg"
+              alt="calculus"></a>
+          <div class="video-time">17:05</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/9threeb1b.jpg" alt="3Blue1Brown">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=WUvTyaaNkzM">
+              <p class="video-title">The essence of calculus</p>
+            </a>
+            <p class="video-uploader">3Blue1Brown &#10003;</p>
+            <p class="video-stats">7.4M views &#x2022; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=Ib8UBwu3yGA"><img class="thumbnail" src="thumbnails/10ai.jpg"
+              alt="ai course"></a>
+          <div class="video-time">3:17:15</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/10evan.jpg" alt="envato">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=Ib8UBwu3yGA">
+              <p class="video-title">Adobe Illustrator for Beginners | FREE COURSE</p>
+            </a>
+            <p class="video-uploader">Envato Tuts+ &#10003;</p>
+            <p class="video-stats">8.7M views &#x2022; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=nli6oai2R08"><img class="thumbnail" src="thumbnails/11stocks.jpg"
+              alt="stocks"></a>
+          <div class="video-time">12:05</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/11ideanp.jpg" alt="ideanp">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=nli6oai2R08">
+              <p class="video-title">Nepal Share Market - Understanding the Basics | नेपाल Share बजार - जान्नुपर्ने
+                कुराहरु | Part 1</p>
+            </a>
+            <p class="video-uploader">Ideapreneur Nepal &#10003;</p>
+            <p class="video-stats">914K views &#x2022; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=Q0uXGQu55GM"><img class="thumbnail" src="thumbnails/12finan.jpg"
+              alt="money"></a>
+          <div class="video-time">9:39</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/12nischa.jpg" alt="nischa">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=Q0uXGQu55GM">
+              <p class="video-title">ACCOUNTANT EXPLAINS: Money Habits Keeping You Poor</p>
+            </a>
+            <p class="video-uploader">Nischa</p>
+            <p class="video-stats">6.4M views &#x2022; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=HbgzrKJvDRw"><img class="thumbnail" src="thumbnails/13linuxfs.jpg"
+              alt="linuxfs"></a>
+          <div class="video-time">15:59</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/13dorian.jpg" alt="dotslash">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=HbgzrKJvDRw">
+              <p class="video-title">Linux File System/Structure Explained!</p>
+            </a>
+            <p class="video-uploader">DorianDotSlash</p>
+            <p class="video-stats">3.4M views &#x2022; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=rHux0gMZ3Eg"><img class="thumbnail" src="thumbnails/14django.jpg"
+              alt="django mosh"></a>
+          <div class="video-time">1:02:36</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/14mosh.jpg" alt="mosh">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=rHux0gMZ3Eg">
+              <p class="video-title">Python Django Tutorial for Beginners</p>
+            </a>
+            <p class="video-uploader">Programming with Mosh &#10003;</p>
+            <p class="video-stats">1.5M views &#x2022; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=MO0r930Sn_8"><img class="thumbnail" src="thumbnails/15magnets.jpg"
+              alt="magnets"></a>
+          <div class="video-time">7:33</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/15fman.jpg" alt="nebulajr">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=MO0r930Sn_8">
+              <p class="video-title">Richard Feynman Magnets</p>
+            </a>
+            <p class="video-uploader">nebulajr</p>
+            <p class="video-stats">857K views &#x2022; 13 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=DEqXNfs_HhY"><img class="thumbnail" src="thumbnails/16c.jpg"
+              alt="c donut"></a>
+          <div class="video-time">2:05</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/16lex.jpg" alt="lex">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=DEqXNfs_HhY">
+              <p class="video-title">Donut-shaped C code that generates a 3D spinning donut</p>
+            </a>
+            <p class="video-uploader">Lex Fridman &#10003;</p>
+            <p class="video-stats">7.9M views &#x2022; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"><img class="thumbnail" src="thumbnails/17clzc.jpg"
+              alt="collatz"></a>
+          <div class="video-time">22:09</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/17ve.jpg" alt="ve">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+              <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+            </a>
+            <p class="video-uploader">Veritasium &#10003;</p>
+            <p class="video-stats">33M views &#x2022; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=kICh_d6tHQk"><img class="thumbnail" src="thumbnails/18jv.jpg"
+              alt="jv study"></a>
+          <div class="video-time">19:43</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/18jv.jpg" alt="jv">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=kICh_d6tHQk">
+              <p class="video-title">how I studied for 12 hours a day for over a year</p>
+            </a>
+            <p class="video-uploader">James Scholz &#10003;</p>
+            <p class="video-stats">11M views &#x2022; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=7_e0CA_nhaE"><img class="thumbnail" src="thumbnails/19ants.jpg"
+              alt="ant war"></a>
+          <div class="video-time">8:35</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/19kurz.jpg" alt="kurz">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=7_e0CA_nhaE">
+              <p class="video-title">The World War of the Ants – The Army Ant</p>
+            </a>
+            <p class="video-uploader">Kurzgesagt – In a Nutshell &#10003;</p>
+            <p class="video-stats">21M views &#x2022; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-div">
+          <a href="https://www.youtube.com/watch?v=QMDf5MSE0LQ"><img class="thumbnail" src="thumbnails/20sv.jpg"
+              alt=""></a>
+          <div class="video-time">11:14</div>
+        </div>
+        <div class="uploader-grid">
+          <div class="avatar-div">
+            <img class="channel-picture" src="profiles/20rick.jpg" alt="">
+          </div>
+          <div class="video-info-div">
+            <a href="https://www.youtube.com/watch?v=QMDf5MSE0LQ">
+              <p class="video-title">Silicon Valley | Season 1-5 | The Best of Gilfoyle</p>
+            </a>
+            <p class="video-uploader">Pickle Rick</p>
+            <p class="video-stats">2.7M views &#x2022; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
